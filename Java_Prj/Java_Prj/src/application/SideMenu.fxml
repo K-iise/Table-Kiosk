@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 사이드메뉴 페이지 -->
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<Pane stylesheets="@style.css" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="800.0" styleClass="background-black" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AllMenu">
+   <children>
+      <Pane layoutX="-1.0" prefHeight="550.0" prefWidth="200.0" styleClass="background-red">
+         <children>
+            <Button fx:id="callButton" layoutX="30.0" layoutY="475.0" styleClass="button-white" onAction="#handlecallButtonAction" text="직원 호출" />
+            <ImageView fitHeight="95.0" fitWidth="183.0" layoutX="19.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/logo_black.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="recommendButton" layoutX="25.0" layoutY="114.0" styleClass="button-red" onAction="#handlerecommendButtonAction" text="추천 메뉴   " />
+            <Button fx:id="mealButton" layoutX="25.0" layoutY="184.0" styleClass="button-red" onAction="#handlemealButtonAction" text="식사   " />
+            <Button fx:id="sideButton" layoutX="25.0" layoutY="254.0" styleClass="button-black" onAction="#handlesideButtonAction" text="사이드   " />
+            <Button fx:id="drinkButton" layoutX="25.0" layoutY="324.0" styleClass="button-red" onAction="#handledrinkButtonAction" text="음료 및 주류   " />
+         </children></Pane>
+      <ScrollPane fitToWidth="true" layoutX="200.0" prefHeight="450.0" prefWidth="600.0" styleClass="black-scrollPane" >
+         <content>
+            <Pane prefHeight="800.0" prefWidth="600.0" styleClass="background-black">
+               <children>
+                  <Button onMouseClicked="#handlemenuButtonClick" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" styleClass="menu-button">
+                     <graphic>
+                        <ImageView fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/차돌된장찌개.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button onMouseClicked="#handlemenuButtonClick" layoutX="200.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" styleClass="menu-button">
+                     <graphic>
+                        <ImageView fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/돼지김치찌개.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button onMouseClicked="#handlemenuButtonClick" layoutX="400.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" styleClass="menu-button">
+                     <graphic>
+                        <ImageView fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/얼큰라면.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button onMouseClicked="#handlemenuButtonClick" layoutY="225.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" styleClass="menu-button">
+                     <graphic>
+                        <ImageView fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/도시락볶음밥.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button onMouseClicked="#handlemenuButtonClick" layoutX="200.0" layoutY="225.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" styleClass="menu-button">
+                     <graphic>
+                        <ImageView fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/물냉면.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button onMouseClicked="#handlemenuButtonClick" layoutX="400.0" layoutY="225.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" styleClass="menu-button">
+                     <graphic>
+                        <ImageView fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/비빔냉면.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button onMouseClicked="#handlemenuButtonClick" layoutY="455.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" styleClass="menu-button">
+                     <graphic>
+                        <ImageView fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/계란찜.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button onMouseClicked="#handlemenuButtonClick" layoutX="200.0" layoutY="460.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" styleClass="menu-button">
+                     <graphic>
+                        <ImageView fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/공기밥.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </Pane>
+         </content>
+      </ScrollPane>
+      <Pane layoutX="199.0" layoutY="462.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="88.0" prefWidth="601.0">
+         <children>
+            <Button fx:id="cartButton" layoutX="445.0" layoutY="21.0" styleClass="sbutton-red" onAction="#handlecartButtonAction" text="장바구니" />
+         </children>
+      </Pane>
+      <Line endX="800.0" endY="450.0" layoutX="-1.0" layoutY="11.0" startX="200.0" startY="450.0" styleClass="line-style" />
+   </children>
+</Pane>

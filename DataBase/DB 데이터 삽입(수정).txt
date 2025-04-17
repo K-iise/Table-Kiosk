@@ -1,0 +1,54 @@
+/* Account 테이블에 데이터 삽입 */
+INSERT INTO Account (User_ID, User_PW, User_Branch, User_Address) VALUES ('user1', '1234', '동의대점', 'Address1');
+INSERT INTO Account (User_ID, User_PW, User_Branch, User_Address) VALUES ('user2', '1234', '서면점', 'Address2');
+
+/* Guest 테이블에 데이터 삽입 */
+INSERT INTO Guest (Guest_ID, User_ID) VALUES ('Table 1', 'user1');
+INSERT INTO Guest (Guest_ID, User_ID) VALUES ('Table 2', 'user1');
+INSERT INTO Guest (Guest_ID, User_ID) VALUES ('Table 3', 'user1');
+INSERT INTO Guest (Guest_ID, User_ID) VALUES ('Table 4', 'user1');
+INSERT INTO Guest (Guest_ID, User_ID) VALUES ('Table 5', 'user1');
+INSERT INTO Guest (Guest_ID, User_ID) VALUES ('Table 6', 'user1');
+INSERT INTO Guest (Guest_ID, User_ID) VALUES ('Ghost', 'user1');
+
+/* Category 테이블에 데이터 삽입 */
+INSERT INTO Category (Ctg_Name) VALUES ('추천메뉴'); 
+INSERT INTO Category (Ctg_Name) VALUES ('식사');
+INSERT INTO Category (Ctg_Name) VALUES ('사이드');
+INSERT INTO Category (Ctg_Name) VALUES ('음료및주류');
+
+/* Menu 테이블에 데이터 삽입 */
+INSERT INTO Menu (Ctg_Name, Menu_Name, Menu_Price) VALUES ('추천메뉴', '숙성삼겹살', 3900);
+INSERT INTO Menu (Ctg_Name, Menu_Name, Menu_Price) VALUES ('추천메뉴', '이베리코꽃목살', 6400);
+INSERT INTO Menu (Ctg_Name, Menu_Name, Menu_Price) VALUES ('추천메뉴', '벌집껍데기', 3900);
+INSERT INTO Menu (Ctg_Name, Menu_Name, Menu_Price) VALUES ('추천메뉴', '차돌된장찌개', 5000);
+INSERT INTO Menu (Ctg_Name, Menu_Name, Menu_Price) VALUES ('추천메뉴', '돼지김치찌개', 3900);
+INSERT INTO Menu (Ctg_Name, Menu_Name, Menu_Price) VALUES ('추천메뉴', '도시락볶음밥', 6000);
+
+INSERT INTO Menu (Ctg_Name, Menu_Name, Menu_Price) VALUES ('식사', '숙성삼겹살', 3900);
+INSERT INTO Menu (Ctg_Name, Menu_Name, Menu_Price) VALUES ('식사', '이베리코꽃목살', 6400);
+INSERT INTO Menu (Ctg_Name, Menu_Name, Menu_Price) VALUES ('식사', '돼지갈비', 4400);
+INSERT INTO Menu (Ctg_Name, Menu_Name, Menu_Price) VALUES ('식사', '꽃삼겹대패', 6900);
+INSERT INTO Menu (Ctg_Name, Menu_Name, Menu_Price) VALUES ('식사', '생막창', 5400);
+INSERT INTO Menu (Ctg_Name, Menu_Name, Menu_Price) VALUES ('식사', '꼬들살', 5900);
+INSERT INTO Menu (Ctg_Name, Menu_Name, Menu_Price) VALUES ('식사', '벌집껍데기', 3900);
+INSERT INTO Menu (Ctg_Name, Menu_Name, Menu_Price) VALUES ('식사', '매운껍데기', 3900);
+
+INSERT INTO Menu (Ctg_Name, Menu_Name, Menu_Price) VALUES ('사이드', '차돌된장찌개', 5000);
+INSERT INTO Menu (Ctg_Name, Menu_Name, Menu_Price) VALUES ('사이드', '돼지김치찌개', 3900);
+INSERT INTO Menu (Ctg_Name, Menu_Name, Menu_Price) VALUES ('사이드', '얼큰라면', 4000);
+INSERT INTO Menu (Ctg_Name, Menu_Name, Menu_Price) VALUES ('사이드', '도시락볶음밥', 6000);
+INSERT INTO Menu (Ctg_Name, Menu_Name, Menu_Price) VALUES ('사이드', '물냉면', 6000);
+INSERT INTO Menu (Ctg_Name, Menu_Name, Menu_Price) VALUES ('사이드', '비빔냉면', 6000);
+
+INSERT INTO Menu (Ctg_Name, Menu_Name, Menu_Price) VALUES ('음료및주류', '콜라', 2000);
+INSERT INTO Menu (Ctg_Name, Menu_Name, Menu_Price) VALUES ('음료및주류', '사이다', 2000);
+INSERT INTO Menu (Ctg_Name, Menu_Name, Menu_Price) VALUES ('음료및주류', '환타', 2000);
+INSERT INTO Menu (Ctg_Name, Menu_Name, Menu_Price) VALUES ('음료및주류', '소주', 4000);
+INSERT INTO Menu (Ctg_Name, Menu_Name, Menu_Price) VALUES ('음료및주류', '맥주', 4000);
+INSERT INTO Menu (Ctg_Name, Menu_Name, Menu_Price) VALUES ('음료및주류', '청하', 5000);
+
+/* Orders 테이블에 데이터 삽입 */
+
+
+/* Order_detail 테이블에 데이터 삽입 */

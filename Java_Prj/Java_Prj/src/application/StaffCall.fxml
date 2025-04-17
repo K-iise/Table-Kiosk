@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 직원 호출 페이지 -->
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="800.0" styleClass="background-black" stylesheets="@style.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.StaffCall">
+    <children>
+        <Line endX="699.0" endY="7.62939453125E-6" layoutX="101.0" layoutY="74.0" startX="-100.0" styleClass="line-style" />
+        <Line endX="-100.0" endY="475.0" layoutX="700.0" layoutY="75.0" startX="-100.0" styleClass="line-style" />
+        <Button fx:id="closeButton" layoutX="637.0" layoutY="13.0" mnemonicParsing="false" onAction="#handlecloseButtonAction" styleClass="sbutton-red" text="닫기" />
+        <Label layoutX="24.0" layoutY="17.0" styleClass="call-label" text="직원 호출" />
+        <Button fx:id="requestButton" layoutX="637.0" layoutY="487.0" mnemonicParsing="false" onAction="#handlerequestButtonAction" styleClass="sbutton-red" text="요청하기" />
+        <ScrollPane fx:id="scrollPane" layoutX="600.0" layoutY="76.0" prefHeight="398.0" prefWidth="202.0" styleClass="black-scrollPane">
+            <content>
+                <AnchorPane fx:id="itemPane" prefHeight="396.0" prefWidth="202.0" styleClass="background-black" />
+            </content>
+        </ScrollPane>
+        <AnchorPane layoutY="75.0" prefHeight="476.0" prefWidth="595.0" styleClass="background-black" >
+            <children>
+                <Button layoutX="40.0" layoutY="38.0" mnemonicParsing="false" onAction="#handleItemSelection" styleClass="menu2-button" text="숟가락"/>
+                <Button layoutX="234.0" layoutY="38.0" mnemonicParsing="false" onAction="#handleItemSelection" styleClass="menu2-button" text="젓가락"/>
+                <Button layoutX="422.0" layoutY="38.0" mnemonicParsing="false" onAction="#handleItemSelection" styleClass="menu2-button" text="유아 식기"/>
+                <Button layoutX="40.0" layoutY="174.0" mnemonicParsing="false" onAction="#handleItemSelection" styleClass="menu2-button" text="얼음"/>
+                <Button layoutX="235.0" layoutY="174.0" mnemonicParsing="false" onAction="#handleItemSelection" styleClass="menu2-button" text="물"/>
+                <Button layoutX="422.0" layoutY="174.0" mnemonicParsing="false" onAction="#handleItemSelection" styleClass="menu2-button" text="물티슈"/>
+                <Button layoutX="40.0" layoutY="310.0" mnemonicParsing="false" onAction="#handleItemSelection" styleClass="menu2-button" text="기타"/>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

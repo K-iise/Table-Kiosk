@@ -1,0 +1,37 @@
+*{
+	-fx-font-family: 'HY Gyeon Go D';
+}
+
+/* 시작하기 버튼 */
+.start-button {
+    -fx-background-color: #FF0000;  /* 배경색: 빨간색 */
+    -fx-font-size: 25px;            /* 폰트 크기 */
+    -fx-pref-height: 50px;          /* 버튼 높이 */
+    -fx-pref-width: 180px;          /* 버튼 너비 */
+    -fx-text-fill: WHITE;			/* 텍스트 색 */
+}
+
+/* 마이너스, 플러스 버튼 */
+.minus-button, .plus-button{
+	-fx-background-color: #FF0000;
+	-fx-font-size: 25px;
+	-fx-pref-height: 55px;
+	-fx-pref-width: 55px;
+    -fx-text-fill: WHITE;
+    
+    -fx-background-radius: 50;
+}
+
+/* 인원 수 선택 라벨 */
+.select{
+	-fx-font-size: 48px; 
+	-fx-text-fill: WHITE;
+}
+
+
+
+
+
+
+
+

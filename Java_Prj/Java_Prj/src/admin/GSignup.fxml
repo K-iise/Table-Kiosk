@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 계정(게스트) 생성(회원가입) 페이지 -->
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="800.0" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="admin.GSignup">
+   <children>
+      <ImageView fitHeight="110.0" fitWidth="210.0" layoutX="20.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/logo_black.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="273.0" layoutY="52.0" styleClass="g-signup-label" text="게스트 회원가입"/>
+      <Group layoutX="235.0" layoutY="235.0">
+         <children>
+            <TextField fx:id="guestID" layoutY="44.0" prefWidth="330.0" styleClass="g-s-id-textfield" promptText="게스트 ID를 입력하세요."/>
+            <Label layoutY="7.0" styleClass="g-id-label" text="게스트 ID"/>
+            <Button fx:id="checkButton" layoutX="204.0" mnemonicParsing="false" onAction="#handleDuplicateCheckButtonAction" styleClass="duplication-button" text="중복 확인" />
+         </children>
+      </Group>
+      <Button fx:id="signupButton" layoutX="315.0" layoutY="432.0" mnemonicParsing="false" onAction="#handleSignupButtonAction" styleClass="g-signup-button" text="가입하기" />
+      <Button fx:id="backButton" layoutX="41.0" layoutY="468.0" minHeight="-Infinity" minWidth="-Infinity" onAction="#handleBackButtonAction" styleClass="m-back-button">
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/back.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

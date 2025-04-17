@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 시작 페이지 -->
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="800.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Start">
+   <children>
+      <ImageView fitHeight="551.0" fitWidth="801.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/intro.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="80.0" fitWidth="180.0" layoutX="32.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/logo.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="startButton" layoutX="315.0" layoutY="444.0" mnemonicParsing="false" onAction="#handleStartButtonAction" styleClass="start-button" text="시작하기" />
+   </children>
+</AnchorPane>

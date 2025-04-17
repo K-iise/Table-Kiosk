@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 주문 내역 페이지 -->
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane styleClass="dialog-pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white; -fx-background-radius: 20; -fx-border-radius: 20;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.OrderDetails">
+   <children>
+      <!-- 상단 라인 -->
+      <Line endX="600.0" endY="-1.52587890625E-5" layoutY="70.0" startY="-1.52587890625E-5" />
+
+      <!-- 닫기 버튼 -->
+      <Button fx:id="closeButton" layoutX="475.0" layoutY="14.0" mnemonicParsing="false" onAction="#handlecloseButtonAction" prefHeight="37.0" prefWidth="108.0" style="-fx-background-color: D90000;" text="닫기" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      
+      <!-- 주문내역 타이틀 -->
+      <Label layoutX="27.0" layoutY="20.0" text="주문내역">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      
+      <!-- 주문 항목을 추가할 VBox -->
+      <VBox fx:id="orderList" layoutX="27.0" layoutY="80.0" prefWidth="546.0" spacing="10.0">
+         <!-- 예시 주문 항목 -->
+         <HBox spacing="10.0">
+            <VBox spacing="5.0">
+               <Label style="-fx-font-size: 18px; -fx-font-weight: bold;" text="숙성삼겹살" />
+               <Label style="-fx-font-size: 12px;" text="2024-08-09  17:50" />
+            </VBox>
+            <Label style="-fx-font-size: 18px; -fx-font-weight: bold;" text="5개" />
+            <Pane HBox.hgrow="ALWAYS" />
+            <Label style="-fx-font-size: 18px; -fx-font-weight: bold;" text="19,500원" />
+         </HBox>
+         <Line endX="546.0" />
+      </VBox>
+
+      <!-- 합계 영역 -->
+      <HBox layoutX="27.0" layoutY="348.0" prefWidth="546.0">
+         <Label style="-fx-font-size: 20px; -fx-font-weight: bold;" text="합계" />
+         <Pane HBox.hgrow="ALWAYS" />
+         <Label fx:id="totalLabel" style="-fx-font-size: 20px; -fx-font-weight: bold;" text="19,500원" />
+      </HBox>
+   </children>
+</AnchorPane>

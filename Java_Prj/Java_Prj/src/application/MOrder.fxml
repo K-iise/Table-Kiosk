@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="326.0" layoutY="50.0" text="Guest_ID">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <ScrollPane layoutX="25.0" layoutY="130.0" prefHeight="395.0" prefWidth="750.0">
+         <content>
+            <TableView prefHeight="395.0" prefWidth="750.0" style="-fx-background-color: white;">
+              <columns>
+                <TableColumn maxWidth="250.0" minWidth="250.0" prefWidth="250.0" text="주문 시간" />
+                  <TableColumn maxWidth="250.0" minWidth="250.0" prefWidth="250.0" text="주문 내역" />
+                  <TableColumn maxWidth="250.0" minWidth="250.0" prefWidth="250.0" text="금액" />
+              </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

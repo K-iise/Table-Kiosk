@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 주문 확인 페이지 -->
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.OrderCheck">
+   <children>
+      <Line endX="499.0" endY="-1.52587890625E-5" layoutX="101.0" layoutY="82.0" startX="-100.0" />
+      <Label layoutX="95.0" layoutY="22.0" styleClass="ordercheck-label" text="이대로 주문하시겠습니까?"/>
+      <Button fx:id="noButton" layoutX="64.0" layoutY="340.0" mnemonicParsing="false" onAction="#handlenoButtonAction" styleClass="no-button" text="아니오" />
+      <Button fx:id="yesButton" layoutX="331.0" layoutY="340.0" mnemonicParsing="false" onAction="#handleyesButtonAction" styleClass="yes-button" text="예" />
+      <Label layoutX="64.0" layoutY="297.0" styleClass="totalprice2-label" text="합계"/>
+      <Label fx:id="ALLtotalPriceLabel" layoutX="449.0" layoutY="297.0" styleClass="alltotalprice-label" text="총 금액"/>
+      <ScrollPane layoutY="82.0" prefHeight="210.0" prefWidth="600.0" styleClass="white-scrollPane">
+        <content>
+            <AnchorPane>
+               <children>
+                <VBox fx:id="orderItemsContainer" minHeight="0.0" minWidth="0.0">
+          		</VBox>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

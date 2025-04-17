@@ -1,0 +1,291 @@
+/* 전체 폰트 */
+* {
+	-fx-font-family: "Malgun Gothic";
+	-fx-font-weight: bold;
+}
+
+/* 게스트 로그인 - 게스트 로그인 라벨 */
+.g-login-label {	
+	-fx-font-size: 35px;
+	-fx-text-fill: WHITE;
+	-fx-pref-height: 60px;
+    -fx-pref-width: 225px;
+}
+
+/* 게스트 로그인 - 게스트 로그인 버튼 */
+.g-login-button {
+	-fx-background-color: black;
+	-fx-font-size: 25px;
+    -fx-pref-height: 20px;
+    -fx-pref-width: 170px;
+    -fx-text-fill: WHITE;
+}
+
+/* 게스트 로그인 - 게스트 ID 입력 필드 */
+.g-id-textfield {
+	-fx-font-size: 16px;
+	-fx-pref-height: 40px;
+    -fx-pref-width: 210px;
+}
+
+/* 시작 - 시작하기 버튼 */
+.start-button {
+    -fx-background-color: #D90000;
+    -fx-font-size: 25px;
+    -fx-pref-height: 20px;
+    -fx-pref-width: 170px;
+    -fx-text-fill: WHITE;
+}
+
+/* 검정 스크롤 팬 */
+.black-scrollPane {
+	-fx-background-color: black;
+	-fx-hbar-policy: never;
+	-fx-vbar-policy: never;
+}
+
+/* 하얀 스크롤 팬 */
+.white-scrollPane {
+	-fx-background-color: white;
+	-fx-hbar-policy: never;
+	-fx-vbar-policy: never;
+}
+
+/* 빨간 배경 */
+.background-red {
+    -fx-background-color: #D90000;
+}
+
+/* 검정 배경*/
+.background-black {
+    -fx-background-color: black;
+}
+
+/* 하얀 배경 */
+.background-white {
+	-fx-background-color: white;
+}
+
+/* 메인 - 검정 버튼 */
+.button-black {
+    -fx-background-color: black;
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+    -fx-pref-height: 45px;
+    -fx-pref-width: 175px;
+}
+
+/* 메인 - 빨강 버튼 */
+.button-red {
+    -fx-background-color: #D90000;
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+    -fx-pref-height: 45px;
+    -fx-pref-width: 175px;
+}
+
+/* 메인 - 작은 빨강 버튼 */
+.sbutton-red {
+	-fx-background-color: #D90000;
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+    -fx-pref-height: 45px;
+    -fx-pref-width: 130px;
+}
+
+/* 메인 - 직원 호출 버튼 */
+.button-white {
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-font-size: 18px;
+    -fx-pref-height: 50px;
+    -fx-pref-width: 140px;
+}
+
+/* 식사 - 설명 라벨 */
+.ex-label {
+	-fx-text-fill: white;
+    -fx-font-size: 25px;
+}
+
+/* 메인 - 각 메뉴 버튼 */
+.menu-button {
+	-fx-background-color: black;
+	-fx-pref-height: 200px;
+    -fx-pref-width: 200px;
+}
+
+/* 메인 - 라인 스타일 */
+.line-style {
+    -fx-stroke: white;
+}
+
+/* 직원 호출 - 직원 호출 라벨 */
+.call-label {
+	-fx-text-fill: white;
+    -fx-font-size: 30px;
+}
+
+/* 직원 호출 - 직원 호출 메뉴 버튼 */
+.menu2-button {
+	-fx-pref-height: 102px;
+    -fx-pref-width: 130px;
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-font-size: 20px;
+}
+
+/* 직원 호출 완료 - 직원 호출 완료 라벨 */
+.com-label {
+	-fx-pref-height: 70px;
+    -fx-pref-width: 510px;
+    -fx-font-size: 45px;
+    -fx-text-fill: white;
+    -fx-text-alignment: center 
+}
+
+/* 메뉴디테일 - 메뉴 이름 라벨 */
+.menuname-label {
+	-fx-font-size: 30px;
+}
+
+/* 메뉴디테일 -  마이너스 버튼 */
+.minus-button {
+	-fx-font-size: 20px;
+	-fx-pref-height: 38px;
+    -fx-pref-width: 41px;
+    -fx-background-color: gray;
+    -fx-background-radius: 50;
+}
+
+/* 메뉴디테일 - 플러스 버튼 */
+.plus-button {
+	-fx-font-size: 20px;
+	-fx-pref-height: 38px;
+    -fx-pref-width: 38px;
+    -fx-background-color: gray;
+    -fx-background-radius: 50;
+}
+
+/* 메뉴디테일 - 수량 라벨 */
+.count-label {
+	-fx-pref-height: 51px;
+    -fx-pref-width: 42px;
+    -fx-font-size: 35px;
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+}
+
+/* 메뉴디테일 - 주문하기 버튼 */
+.order-button {
+	-fx-pref-height: 46px;
+    -fx-pref-width: 324px;
+    -fx-background-color: #D90000;
+    -fx-font-size: 22px;
+    -fx-text-fill: white;
+}
+
+/* 장바구니 - x(닫기) 버튼 */
+.x-button {
+	-fx-pref-height: 37px;
+    -fx-pref-width: 38px;
+    -fx-background-color: white;
+    -fx-font-size: 23px;
+}
+
+/* 장바구니 - 총 금액 라벨 / 관리자 로그인 - 아이디 입력 필드, 비밀번호 입력필드 */
+.totalprice-label, .m-id-textfield, .m-pw-textfield {
+	-fx-font-size: 20px;
+}
+
+/* 주문 확인 - 주문 확인 라벨 / 관리자 회원가입 - 회원가입 라벨 / 테이블 목록 - 테이블 목록 라벨
+ * 전체 매출 - 전체 매출 라벨 / 게스트 회원가입 - 회원가입 라벨 / 게스트 계정 삭제 - 삭제 라벨 
+ * 주문 접수 - 주문 접수 라벨*/
+.ordercheck-label, .m-signup-label, .m-table-label, .m-totalsales-label,
+.g-signup-label, .m-mg-label, .g-delete-label, .m-reception-label {
+	-fx-font-size: 35px;
+}
+
+/* 주문 확인 - 총 금액 라벨, 메뉴별 총 금액 라벨 / 관리자 인트로 - 관리자 모드 라벨 /
+ * 장바구니 - 장바구니 비었음 라벨, 장바구니 라벨 / 관리자 로그인 - 아이디 라벨, 비밀번호 라벨
+ * 전체 매출 - 금일 총 매출 라벨 / 게스트 회원가입 - 아이디 라벨 / 게스트 계정 삭제 - 삭제 라벨*/
+.alltotalprice-label, .totalprice2-label, .mmode-label, .empty-label, .cart-label,
+.m-id-label, .m-pw-label, .m-today-label, .g-id-label, .g-ds-label {
+	-fx-font-size: 25px;
+}
+
+/* 관리자 로그인 - 로그인 라벨 */
+.m-login-label {
+	-fx-font-size: 40px;
+}
+
+/* 주문 확인 - 예 아니오 버튼 */
+.no-button, .yes-button {
+	-fx-pref-height: 40px;
+    -fx-pref-width: 200px;
+    -fx-background-color: D90000;
+    -fx-font-size: 20px;
+    -fx-text-fill: white;
+}
+
+/* 관리자 인트로 - 로그인 버튼, 회원가입 버튼 / 게스트 회원가입 - 회원가입 버튼 */
+.m-login-button, .m-signup-button, .g-signup-button {
+	-fx-pref-height: 40px;
+    -fx-pref-width: 170px;
+    -fx-background-color: black;
+    -fx-font-size: 20px;
+    -fx-text-fill: white;
+}
+
+/* 관리자 회원가입 - 모든 입력필드 / 게스트 회원가입 - 아이디 입력필드 */
+.m-s-textfield, .g-s-id-textfield {
+	-fx-font-size: 20px;
+	-fx-pref-width: 330px;
+}
+
+/* 관리자 회원가입 - 중복 확인 버튼 */
+.duplication-button {
+	-fx-pref-height: 15px;
+    -fx-pref-width: 124px;
+    -fx-background-color: grey;
+    -fx-font-size: 15px;
+    -fx-text-fill: white;
+}
+
+/* 테이블 목록 - 로그아웃 버튼, 계정 관리 버튼, 전체 매출 버튼 / 주문 접수 - 확인 버튼, 초기화 버튼 */
+.m-logout-button, .m-mg-button, .m-sales-button, .m-check-button, .m-clear-button {
+	-fx-pref-height: 45px;
+    -fx-pref-width: 140px;
+    -fx-background-color: black;
+    -fx-font-size: 18px;
+    -fx-text-fill: white;
+}
+
+/* 테이블 목록 - 각 테이블 버튼 */
+.m-table-button {
+	-fx-pref-height: 130px;
+    -fx-pref-width: 180px;
+	-fx-font-size: 24px;
+    -fx-text-fill: white;
+	-fx-background-color: gray;
+	-fx-background-radius: 10;
+}
+
+/* 관리자 모드 뒤로가기 버튼 */
+.m-back-button {
+	-fx-pref-height: 50px;
+    -fx-pref-width: 50px;
+}
+
+/* 계정 관리 - 계정 생성 버튼, 계정 삭제 버튼 */
+.m-create-button, .m-delete-button {
+	-fx-pref-height: 130px;
+    -fx-pref-width: 140px;
+    -fx-font-size: 18px;
+    -fx-text-fill: white;
+	-fx-background-color: black;
+	-fx-background-radius: 10;
+}
+
+
+

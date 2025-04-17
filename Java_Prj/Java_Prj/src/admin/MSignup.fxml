@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 관리자 회원가입 페이지 -->
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="800.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="admin.MSignup">
+   <children>
+      <ImageView fitHeight="110.0" fitWidth="210.0" layoutX="20.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/logo_black.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="255.0" layoutY="49.0" styleClass="m-signup-label" text="관리자 회원가입" />
+      <Group layoutX="41.0" layoutY="142.0">
+         <children>
+            <TextField fx:id="userID" layoutY="44.0" promptText="ID를 입력하세요." styleClass="m-s-textfield" />
+            <Label layoutY="7.0" styleClass="m-id-label" text="ID" />
+            <Button fx:id="checkButton" layoutX="204.0" layoutY="6.0" mnemonicParsing="false" onAction="#handleDuplicateCheckButtonAction" styleClass="duplication-button" text="중복 확인" />
+         </children>
+      </Group>
+      <Group layoutX="34.0" layoutY="292.0">
+         <children>
+            <PasswordField fx:id="userPW" layoutX="7.0" layoutY="9.0" promptText="비밀번호를 입력하세요." styleClass="m-s-textfield" />
+            <Label layoutX="7.0" layoutY="-25.0" styleClass="m-pw-label" text="비밀번호" />
+         </children>
+      </Group>
+      <Group layoutX="122.0" layoutY="448.0" />
+      <Group layoutX="425.0" layoutY="142.0">
+         <children>
+            <TextField fx:id="userBranch" layoutY="44.0" promptText="지점명을 입력하세요." styleClass="m-s-textfield" />
+            <Label layoutY="11.0" styleClass="m-id-label" text="지점명" />
+         </children>
+      </Group>
+      <Group layoutX="425.0" layoutY="256.0">
+         <children>
+            <TextField fx:id="userAddress" layoutY="44.0" promptText="주소를 입력하세요." styleClass="m-s-textfield" />
+            <Label layoutY="11.0" styleClass="m-id-label" text="주소" />
+         </children>
+      </Group>
+      <Button fx:id="signupButton" layoutX="297.0" layoutY="471.0" mnemonicParsing="false" onAction="#handleSignupButtonAction" styleClass="m-signup-button" text="가입하기" />
+      <Group layoutX="41.0" layoutY="364.0">
+         <children>
+            <Label layoutY="11.0" styleClass="m-pw-label" text="비밀번호 확인" />
+            <PasswordField fx:id ="pwCheck" layoutY="46.0" promptText="비밀번호를 입력하세요." styleClass="m-s-textfield" />
+         </children>
+      </Group>
+      <Button fx:id="backButton" layoutX="41.0" layoutY="468.0" minHeight="-Infinity" minWidth="-Infinity" onAction="#handleBackButtonAction" styleClass="m-back-button">
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/back.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

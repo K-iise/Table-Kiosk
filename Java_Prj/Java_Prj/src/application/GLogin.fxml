@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 게스트 로그인 페이지 -->
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="800.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.GLogin">
+   <children>
+      <ImageView fitHeight="551.0" fitWidth="801.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/intro.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="80.0" fitWidth="180.0" layoutX="32.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/logo.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="loginButton" layoutX="315.0" layoutY="418.0" mnemonicParsing="false" onAction="#handleLoginButtonAction" styleClass="g-login-button" text="로그인" />
+      <TextField fx:id="guestID" layoutX="294.0" layoutY="264.0" promptText="게스트 ID를 입력하세요." styleClass="g-id-textfield" />
+      <Label layoutX="287.0" layoutY="128.0" styleClass="g-login-label" text="게스트 로그인" />
+   </children>
+</AnchorPane>

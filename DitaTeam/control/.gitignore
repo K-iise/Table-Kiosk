@@ -1,0 +1,16 @@
+/AccountMgr.class
+/DBConnectionMgr.class
+/OrderMgr.class
+/Order_detailMgr.class
+/categoryMgr.class
+/CategoryMgr.class
+/menuMgr.class
+/MenuMgr.class
+/guestMgr.class
+/GuestMgr.class
+/NotificationServer$ClientHandler.class
+/NotificationServer.class
+/TableServer$ClientHandler.class
+/TableServer.class
+/Server$Client.class
+/Server.class

@@ -1,0 +1,7 @@
+/* 테이블 삭제 */
+DROP TABLE Order_detail;
+DROP TABLE Orders;
+DROP TABLE Menu;
+DROP TABLE Category;
+DROP TABLE Guest;
+DROP TABLE Account;
